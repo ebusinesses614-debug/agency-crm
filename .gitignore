@@ -1,0 +1,19 @@
+# Secrets & local config
+.env
+notion_pages.json
+
+# Generated output
+story_output/
+
+# Local photos (never commit client work photos)
+photos/
+*.jpg
+*.jpeg
+*.png
+*.webp
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
