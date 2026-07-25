@@ -17,3 +17,6 @@ __pycache__/
 *.pyc
 .venv/
 venv/
+
+# dry-run debug artifact
+_sample_monday_blocks.json
