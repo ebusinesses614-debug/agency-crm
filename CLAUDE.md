@@ -12,13 +12,31 @@ This is a weekly content generation system for local-service-business marketing.
 - `.env` — secrets/config (git-ignored): `NOTION_TOKEN`, `IG_HANDLE`, `PHOTO_DIR`,
   and optional `NOTION_PARENT_PAGE`.
 
-## Notion page setup (two ways)
-- **Easiest:** set `NOTION_PARENT_PAGE=<a page URL>` in `.env`. Connect the
-  integration to that one page. `push_content.py` auto-creates the 7 day pages
-  (Monday..Sunday) under it on first run, then reuses them (cached in
-  `notion_pages.json`).
-- **Manual:** create 7 pages titled Monday..Sunday and share each with the
-  integration; they're found by title via the API.
+## How this pushes to Notion — TWO paths
+
+**Path A — Notion connector (PRIMARY, what's in use).** This workspace reaches
+Notion through the **Notion MCP connector** (routed via Anthropic, so it works
+even when the sandbox network policy blocks `api.notion.com`). The live pages
+already exist — see `NOTION_PAGES.md` for the parent + 7 day-page IDs. To refresh
+a week, **update those pages in place** with the Notion tools
+(`notion-update-page`, `command:"replace_content"`), one day per page. Do NOT
+create new pages each week — reuse the IDs so links stay stable.
+
+**Path B — REST API script (fallback).** `push_content.py` hits `api.notion.com`
+directly with a token. Only works if the environment's network policy allows
+Notion (Custom/Full + `api.notion.com`) and `NOTION_TOKEN` is set. Auto-creates
+day pages under `NOTION_PARENT_PAGE`. Use `--dry-run` to build+count with no
+network.
+
+### Notion connector markdown gotchas (learned the hard way)
+- Each script line goes on **its own line** → each becomes its own block
+  ("one line per breath"). Blank lines between them are stripped, that's fine.
+- **Escape STAR label brackets**: write `\[S — SHOCK, spoken\]:` not `[...]:`,
+  or Notion treats the line as a link-reference definition and hides it.
+- **Escape dollar signs**: `\$1,500` (bare `$…$` can trigger math).
+- Video = `<details><summary>**Video N — Style**</summary> … </details>` toggle.
+- Story slide colors = `<span color="red|green|orange">…</span>`.
+- Day theme header = `<callout icon="🔧" color="blue_bg">**Day — Theme**</callout>`.
 
 ## Weekly cadence — when the user says "update all content for the week"
 1. Read `CONTENT_RULES.md` and `ARCHIVE.md`.
@@ -27,13 +45,15 @@ This is a weekly content generation system for local-service-business marketing.
 3. Keep the fixed weekly themes (Mon One Specific Fix … Sat Objection Crusher,
    Sun rest), the 4-videos/day + STAR + format rotation (Clone ~2×, Miro ~2×,
    no carousels), and the 3-stories/day (poll / proof-or-agitate / CTA; Thursday Q&A).
-4. `python push_content.py` — push + verify (4 videos + stories per day).
-5. `python daily_story.py all` — regenerate all story images.
+4. **Push (Path A):** for each day in `NOTION_PAGES.md`, `notion-update-page`
+   with `replace_content` and that day's markdown. Then `notion-fetch` the parent
+   to confirm all 7 still nest and counts look right. (Or Path B if Notion is
+   network-allowed: `python push_content.py`.)
+5. `python daily_story.py all` — regenerate all story images (needs the photos).
 6. Append the new week to `ARCHIVE.md`.
 
-## Validation without a token
-`python push_content.py --dry-run` builds every block and prints counts with no
-network — use it to confirm structure before a live push.
+> Requires the **Notion connector enabled in the chat**. If Notion tools aren't
+> available, tell the user to enable the Notion connector for this session.
 
 ## Notes
 - Never commit `.env`, `notion_pages.json`, `story_output/`, or client photos.
