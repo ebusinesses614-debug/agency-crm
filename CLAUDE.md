@@ -9,7 +9,16 @@ This is a weekly content generation system for local-service-business marketing.
 - `daily_story.py` — renders IG Story PNGs from real photos.
 - `CONTENT_RULES.md` — **the rules every week must follow. Read it before writing any content.**
 - `ARCHIVE.md` — log of past hooks/frameworks/angles. **Never repeat what's in here.**
-- `.env` — secrets/config (git-ignored): `NOTION_TOKEN`, `IG_HANDLE`, `PHOTO_DIR`.
+- `.env` — secrets/config (git-ignored): `NOTION_TOKEN`, `IG_HANDLE`, `PHOTO_DIR`,
+  and optional `NOTION_PARENT_PAGE`.
+
+## Notion page setup (two ways)
+- **Easiest:** set `NOTION_PARENT_PAGE=<a page URL>` in `.env`. Connect the
+  integration to that one page. `push_content.py` auto-creates the 7 day pages
+  (Monday..Sunday) under it on first run, then reuses them (cached in
+  `notion_pages.json`).
+- **Manual:** create 7 pages titled Monday..Sunday and share each with the
+  integration; they're found by title via the API.
 
 ## Weekly cadence — when the user says "update all content for the week"
 1. Read `CONTENT_RULES.md` and `ARCHIVE.md`.

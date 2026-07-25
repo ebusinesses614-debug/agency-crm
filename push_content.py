@@ -267,6 +267,13 @@ class Notion:
                 return res["id"]
         return None
 
+    def create_page(self, parent_id, title):
+        """Create a child page titled `title` under parent_id; return its id."""
+        body = {"parent": {"type": "page_id", "page_id": parent_id},
+                "properties": {"title": {"title": [
+                    {"type": "text", "text": {"content": title}}]}}}
+        return self._request("POST", "/pages", json=body)["id"]
+
     # -- block ops ----------------------------------------------------------
     def children(self, block_id):
         out, cursor = [], None
@@ -298,14 +305,33 @@ class Notion:
 # ---------------------------------------------------------------------------
 # Orchestration
 # ---------------------------------------------------------------------------
+def normalize_page_id(raw):
+    """Accept a Notion page ID or a page URL; return a dashed UUID (or '')."""
+    if not raw:
+        return ""
+    uuid = re.search(r"[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}"
+                     r"-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}", raw)
+    if uuid:
+        h = uuid.group(0).replace("-", "").lower()
+    else:
+        runs = re.findall(r"[0-9a-fA-F]{32}", raw)  # last 32-hex run = the id
+        if not runs:
+            return ""
+        h = runs[-1].lower()
+    return "%s-%s-%s-%s-%s" % (h[0:8], h[8:12], h[12:16], h[16:20], h[20:32])
+
+
 def resolve_page_ids(notion, days):
-    """Return {day: page_id}, from env overrides, cache, or title search."""
+    """Return {day: page_id}, from env overrides, cache, title search, or by
+    auto-creating the day pages under NOTION_PARENT_PAGE when set."""
     ids, cache = {}, {}
     if os.path.exists(PAGE_CACHE_FILE):
         try:
             cache = json.load(open(PAGE_CACHE_FILE, encoding="utf-8"))
         except Exception:
             cache = {}
+
+    parent = normalize_page_id(os.environ.get("NOTION_PARENT_PAGE", "").strip())
 
     missing = []
     for day in days:
@@ -319,14 +345,19 @@ def resolve_page_ids(notion, days):
         pid = notion.find_page_id(day)
         if pid:
             ids[day] = pid
+        elif parent:
+            ids[day] = notion.create_page(parent, day)
+            print("  created Notion page: %s" % day)
+            time.sleep(0.34)
         else:
             missing.append(day)
 
     if missing:
         print("\n[!] Could not find Notion pages for: %s" % ", ".join(missing))
-        print("    Fix: create a page titled exactly like the day, then open it,")
-        print("    click the '...' menu -> Connections -> add your integration.")
-        print("    (Or pin the ID in .env as NOTION_PAGE_<DAY>.)\n")
+        print("    Easiest fix: make ONE page, connect your integration to it,")
+        print("    and set NOTION_PARENT_PAGE=<that page's URL> in .env -- the")
+        print("    script will then create the 7 day pages for you automatically.")
+        print("    (Or make pages titled like each day and share each one.)\n")
 
     merged = dict(cache)
     merged.update(ids)

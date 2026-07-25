@@ -1,0 +1,1252 @@
+[
+  {
+    "object": "block",
+    "type": "callout",
+    "callout": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Monday  --  One Specific Fix"
+          },
+          "annotations": {
+            "bold": true,
+            "color": "default"
+          }
+        }
+      ],
+      "icon": {
+        "type": "emoji",
+        "emoji": "🔧"
+      },
+      "color": "blue_background"
+    }
+  },
+  {
+    "object": "block",
+    "type": "heading_2",
+    "heading_2": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "✅ Daily Checklist"
+          },
+          "annotations": {
+            "bold": true,
+            "color": "default"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "type": "to_do",
+    "to_do": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Film today's videos (2-3 minimum, aim for all 4)"
+          },
+          "annotations": {
+            "bold": false,
+            "color": "default"
+          }
+        }
+      ],
+      "checked": false
+    }
+  },
+  {
+    "object": "block",
+    "type": "to_do",
+    "to_do": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Write captions + on-screen text for each video"
+          },
+          "annotations": {
+            "bold": false,
+            "color": "default"
+          }
+        }
+      ],
+      "checked": false
+    }
+  },
+  {
+    "object": "block",
+    "type": "to_do",
+    "to_do": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Post to IG + TikTok"
+          },
+          "annotations": {
+            "bold": false,
+            "color": "default"
+          }
+        }
+      ],
+      "checked": false
+    }
+  },
+  {
+    "object": "block",
+    "type": "to_do",
+    "to_do": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Post today's 3 IG stories"
+          },
+          "annotations": {
+            "bold": false,
+            "color": "default"
+          }
+        }
+      ],
+      "checked": false
+    }
+  },
+  {
+    "object": "block",
+    "type": "to_do",
+    "to_do": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Go live 2x on TikTok"
+          },
+          "annotations": {
+            "bold": false,
+            "color": "default"
+          }
+        }
+      ],
+      "checked": false
+    }
+  },
+  {
+    "object": "block",
+    "type": "to_do",
+    "to_do": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Outreach: DM 10 prospects in FB groups + 5 on LinkedIn"
+          },
+          "annotations": {
+            "bold": false,
+            "color": "default"
+          }
+        }
+      ],
+      "checked": false
+    }
+  },
+  {
+    "object": "block",
+    "type": "to_do",
+    "to_do": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Reply to every comment for 1 full hour after posting"
+          },
+          "annotations": {
+            "bold": false,
+            "color": "default"
+          }
+        }
+      ],
+      "checked": false
+    }
+  },
+  {
+    "object": "block",
+    "type": "heading_2",
+    "heading_2": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "🎬 Today's 4 Videos"
+          },
+          "annotations": {
+            "bold": true,
+            "color": "default"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "type": "toggle",
+    "toggle": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Video 1  -  Talking head"
+          },
+          "annotations": {
+            "bold": true,
+            "color": "default"
+          }
+        }
+      ],
+      "children": [
+        {
+          "object": "block",
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Content Style / Format: "
+                },
+                "annotations": {
+                  "bold": true,
+                  "color": "default"
+                }
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "Talking head"
+                },
+                "annotations": {
+                  "bold": false,
+                  "color": "default"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Content Pillar: "
+                },
+                "annotations": {
+                  "bold": true,
+                  "color": "default"
+                }
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "Value"
+                },
+                "annotations": {
+                  "bold": false,
+                  "color": "default"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Hook: "
+                },
+                "annotations": {
+                  "bold": true,
+                  "color": "default"
+                }
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "You lose 8 out of 10 leads before lunch."
+                },
+                "annotations": {
+                  "bold": false,
+                  "color": "default"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Script: "
+                },
+                "annotations": {
+                  "bold": true,
+                  "color": "default"
+                }
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "[S -- SHOCK, spoken]: You lose 8 out of 10 leads before lunch.\n[T -- TEXT HOOK on screen]: \"Your leads rot in 5 minutes.\"\n[A -- ACHIEVEMENT]: We book 30+ jobs a month for service businesses who used to 'call people back later.'\n[R -- ROADMAP]: There's a 300-second window after a lead comes in.\nMiss it and the money is already gone.\nStay to the end and I'll hand you The 300-Second Window -- the exact way we catch every lead before it goes cold.\n[RECIPE]:\n1. A lead fills out your form.\n2. A text fires in under 60 seconds -- automatically, not 'when you get to it.'\n3. It asks one thing: what day works for you?\n4. It offers two time slots. Not 'call us.' Two slots.\n5. No reply? Three more texts across 48 hours.\n[LOOP CLOSE]: That's The 300-Second Window.\nThe lead never had time to call the next guy.\nYou didn't get more leads.\nYou just stopped killing the ones you already paid for."
+                },
+                "annotations": {
+                  "bold": false,
+                  "color": "default"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "CTA: "
+                },
+                "annotations": {
+                  "bold": true,
+                  "color": "default"
+                }
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "Comment or DM \"FIX\" and I'll send you the 5-minute follow-up sequence we install."
+                },
+                "annotations": {
+                  "bold": false,
+                  "color": "default"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Caption: "
+                },
+                "annotations": {
+                  "bold": true,
+                  "color": "default"
+                }
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "You're not short on leads. You're short on speed. The 300-Second Window is why our clients book the jobs the other guy 'meant to call back.' DM FIX."
+                },
+                "annotations": {
+                  "bold": false,
+                  "color": "default"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "type": "toggle",
+    "toggle": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Video 2  -  Overlay text"
+          },
+          "annotations": {
+            "bold": true,
+            "color": "default"
+          }
+        }
+      ],
+      "children": [
+        {
+          "object": "block",
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Content Style / Format: "
+                },
+                "annotations": {
+                  "bold": true,
+                  "color": "default"
+                }
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "Overlay text"
+                },
+                "annotations": {
+                  "bold": false,
+                  "color": "default"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Content Pillar: "
+                },
+                "annotations": {
+                  "bold": true,
+                  "color": "default"
+                }
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "Value"
+                },
+                "annotations": {
+                  "bold": false,
+                  "color": "default"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Hook: "
+                },
+                "annotations": {
+                  "bold": true,
+                  "color": "default"
+                }
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "5 minutes late = a dead lead."
+                },
+                "annotations": {
+                  "bold": false,
+                  "color": "default"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Script: "
+                },
+                "annotations": {
+                  "bold": true,
+                  "color": "default"
+                }
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "A lead comes in at 9:02pm.\nYou see it at 8:15am.\n[on screen: -78% chance they answer]\nThey already booked your competitor.\nHere's the timeline that actually wins:\n0:00 -- form submitted\n0:45 -- auto text sent\n2:00 -- they reply 'tomorrow at 10?'\n5:00 -- on your calendar.\nThe lead didn't get better. Your response did."
+                },
+                "annotations": {
+                  "bold": false,
+                  "color": "default"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "CTA: "
+                },
+                "annotations": {
+                  "bold": true,
+                  "color": "default"
+                }
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "DM \"FIX\" for the exact 5-minute timeline."
+                },
+                "annotations": {
+                  "bold": false,
+                  "color": "default"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Caption: "
+                },
+                "annotations": {
+                  "bold": true,
+                  "color": "default"
+                }
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "Speed is the cheapest upgrade you'll ever buy. DM FIX."
+                },
+                "annotations": {
+                  "bold": false,
+                  "color": "default"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "type": "toggle",
+    "toggle": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Video 3  -  Green screen (SMS screenshot behind me)"
+          },
+          "annotations": {
+            "bold": true,
+            "color": "default"
+          }
+        }
+      ],
+      "children": [
+        {
+          "object": "block",
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Content Style / Format: "
+                },
+                "annotations": {
+                  "bold": true,
+                  "color": "default"
+                }
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "Green screen (SMS screenshot behind me)"
+                },
+                "annotations": {
+                  "bold": false,
+                  "color": "default"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Content Pillar: "
+                },
+                "annotations": {
+                  "bold": true,
+                  "color": "default"
+                }
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "Proof"
+                },
+                "annotations": {
+                  "bold": false,
+                  "color": "default"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Hook: "
+                },
+                "annotations": {
+                  "bold": true,
+                  "color": "default"
+                }
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "This one text booked a $4,000 job."
+                },
+                "annotations": {
+                  "bold": false,
+                  "color": "default"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Script: "
+                },
+                "annotations": {
+                  "bold": true,
+                  "color": "default"
+                }
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "[green screen: a real SMS thread]\nLead came in at 7:41pm.\nOur system texted back at 7:41pm. Same minute.\n'Hey it's Mike from ___ -- want Thursday 2pm or Friday 9am?'\nThey picked Friday.\nThe owner was asleep.\n[circle both timestamps]\nNo human touched this until the tech showed up to the job."
+                },
+                "annotations": {
+                  "bold": false,
+                  "color": "default"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "CTA: "
+                },
+                "annotations": {
+                  "bold": true,
+                  "color": "default"
+                }
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "Want this thread running for you? DM \"FIX\"."
+                },
+                "annotations": {
+                  "bold": false,
+                  "color": "default"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Caption: "
+                },
+                "annotations": {
+                  "bold": true,
+                  "color": "default"
+                }
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "The owner was asleep. The calendar wasn't. DM FIX."
+                },
+                "annotations": {
+                  "bold": false,
+                  "color": "default"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "type": "toggle",
+    "toggle": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Video 4  -  Reaction (reacting to bad advice)"
+          },
+          "annotations": {
+            "bold": true,
+            "color": "default"
+          }
+        }
+      ],
+      "children": [
+        {
+          "object": "block",
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Content Style / Format: "
+                },
+                "annotations": {
+                  "bold": true,
+                  "color": "default"
+                }
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "Reaction (reacting to bad advice)"
+                },
+                "annotations": {
+                  "bold": false,
+                  "color": "default"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Content Pillar: "
+                },
+                "annotations": {
+                  "bold": true,
+                  "color": "default"
+                }
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "Pain"
+                },
+                "annotations": {
+                  "bold": false,
+                  "color": "default"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Hook: "
+                },
+                "annotations": {
+                  "bold": true,
+                  "color": "default"
+                }
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "\"I'll call them back tomorrow\" -- famous last words."
+                },
+                "annotations": {
+                  "bold": false,
+                  "color": "default"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Script: "
+                },
+                "annotations": {
+                  "bold": true,
+                  "color": "default"
+                }
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "[react to a clip of an owner saying 'I'll get to it tomorrow']\nStop. That lead is worth $40 right now.\nBy tomorrow it's worth $4.\nThey filled out 3 other forms tonight.\nWhoever texts first wins the job. Every single time.\nYou don't have a lead problem.\nYou have a 12-hour delay problem."
+                },
+                "annotations": {
+                  "bold": false,
+                  "color": "default"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "CTA: "
+                },
+                "annotations": {
+                  "bold": true,
+                  "color": "default"
+                }
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "Kill the delay -- DM \"FIX\"."
+                },
+                "annotations": {
+                  "bold": false,
+                  "color": "default"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "object": "block",
+          "type": "paragraph",
+          "paragraph": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Caption: "
+                },
+                "annotations": {
+                  "bold": true,
+                  "color": "default"
+                }
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "Tomorrow is where leads go to die. DM FIX."
+                },
+                "annotations": {
+                  "bold": false,
+                  "color": "default"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "type": "heading_2",
+    "heading_2": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "📱 Today's 3 IG Stories"
+          },
+          "annotations": {
+            "bold": true,
+            "color": "default"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "type": "toggle",
+    "toggle": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Story 1"
+          },
+          "annotations": {
+            "bold": true,
+            "color": "default"
+          }
+        }
+      ],
+      "children": [
+        {
+          "object": "block",
+          "type": "bulleted_list_item",
+          "bulleted_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "📊 POLL - "
+                },
+                "annotations": {
+                  "bold": true,
+                  "color": "default"
+                }
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "How fast do you text a new lead back?"
+                },
+                "annotations": {
+                  "bold": false,
+                  "color": "default"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "object": "block",
+          "type": "bulleted_list_item",
+          "bulleted_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "Answers: "
+                },
+                "annotations": {
+                  "bold": true,
+                  "color": "default"
+                }
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "Under 5 min / Honestly... hours"
+                },
+                "annotations": {
+                  "bold": false,
+                  "color": "default"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "type": "toggle",
+    "toggle": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Story 2"
+          },
+          "annotations": {
+            "bold": true,
+            "color": "default"
+          }
+        }
+      ],
+      "children": [
+        {
+          "object": "block",
+          "type": "bulleted_list_item",
+          "bulleted_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "◾ dark box - "
+                },
+                "annotations": {
+                  "bold": true,
+                  "color": "default"
+                }
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "A lead goes cold in "
+                },
+                "annotations": {
+                  "bold": false,
+                  "color": "default"
+                }
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "5 minutes"
+                },
+                "annotations": {
+                  "bold": false,
+                  "color": "red"
+                }
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": ".\nYours are sitting overnight."
+                },
+                "annotations": {
+                  "bold": false,
+                  "color": "default"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "object": "block",
+          "type": "bulleted_list_item",
+          "bulleted_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "▫️ white box - "
+                },
+                "annotations": {
+                  "bold": true,
+                  "color": "default"
+                }
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "Our system texts back in "
+                },
+                "annotations": {
+                  "bold": false,
+                  "color": "default"
+                }
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "under 60 seconds"
+                },
+                "annotations": {
+                  "bold": false,
+                  "color": "green"
+                }
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "."
+                },
+                "annotations": {
+                  "bold": false,
+                  "color": "default"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "object": "block",
+    "type": "toggle",
+    "toggle": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Story 3"
+          },
+          "annotations": {
+            "bold": true,
+            "color": "default"
+          }
+        }
+      ],
+      "children": [
+        {
+          "object": "block",
+          "type": "bulleted_list_item",
+          "bulleted_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "▫️ white box - "
+                },
+                "annotations": {
+                  "bold": true,
+                  "color": "default"
+                }
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "The 300-Second Window"
+                },
+                "annotations": {
+                  "bold": false,
+                  "color": "default"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "object": "block",
+          "type": "bulleted_list_item",
+          "bulleted_list_item": {
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "◾ dark box - "
+                },
+                "annotations": {
+                  "bold": true,
+                  "color": "default"
+                }
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "DM me "
+                },
+                "annotations": {
+                  "bold": false,
+                  "color": "default"
+                }
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "FIX"
+                },
+                "annotations": {
+                  "bold": false,
+                  "color": "orange"
+                }
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " for the 5-minute follow-up sequence we install."
+                },
+                "annotations": {
+                  "bold": false,
+                  "color": "default"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+]
