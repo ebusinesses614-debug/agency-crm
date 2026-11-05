@@ -1,21 +1,27 @@
 # Junk Removal Video — "The Curb Test"
 
-**Format:** animated opener (`junk_removal_opener.mp4`, 6.5s), then you on camera.
+**Format:** real-footage opener (`junk_removal_opener.mp4`, 6.2s), then you on camera.
 **Length target:** 35–45s total.
 **DM keyword:** HAUL
 
 ---
 
-## 0:00–0:06.5 — Opener (already made)
-Truck drives in with the "JUNK REMOVAL OWNERS ↓" callout →
-phone shows calls dropping 12 → 0 with missed jobs →
-"Your truck's full. Your phone isn't." → "Here's what I'd fix →"
+## 0:00–0:06.2 — Opener (already made, v2: real footage)
+Fast cuts, a thud on every cut, bold caption text:
+1. Junk pile with an old armchair: **"JUNK REMOVAL OWNERS ↓"**
+2. Overflowing dumpster: **"Your calendar should be THIS full…"**
+3. Dozer at the dump: **"…not just on Saturdays."**
+4. Phone on a table, ringing (with ring sound): **"4 words on your ad make THIS happen."**
 
-Cut to you **on** the arrow. No pause, no "hey guys."
+Cut to you on the last ring. First line out of your mouth is the hook. No "hey guys."
+
+Footage: Pixabay (free for commercial use, no credit required): clips
+126598 (Nick_the_Photographer), 11843 (chayka1270), 39813 (Rootka21407),
+304045 (VirtualZero).
 
 ---
 
-## 0:06.5 → end — Your talking part (STAR)
+## 0:06.2 → end — Your talking part (STAR)
 
 **[S — SHOCK, spoken]:**
 Your junk removal ad is missing four words.
